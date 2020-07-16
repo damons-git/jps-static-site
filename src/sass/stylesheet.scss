@@ -1,6 +1,48 @@
-$title-font: "Bitter";
-$body-font: "Ariel";
+$logo-font: "Bitter";
+$logo-color: #f0f0f0;
 
-* {
-    font-family: $title-font;
+$bg-color: #09253a;
+$accent-color: #09253a;
+
+html {
+    background-color: $bg-color;
+    font-family: "Ariel";
+    max-width: 100vw;
+}
+
+body {
+    width: 100%;
+}
+
+header {
+    color: $logo-color;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .logo {
+        font-size: 6.5em;
+        font-family: $logo-font;
+        margin: 35px auto 15px auto;
+    }
+
+    .title {
+        font-size: 3em;
+        margin: 5px auto;
+    }
+
+    .services ul li {
+        display: inline-block;
+        font-size: 1.1em;
+        letter-spacing: 0.05em;
+        padding: 3px 25px;
+        text-align: center;
+        border-right: 1px solid rgba($logo-color, 0.25);
+        text-transform: uppercase;
+
+        &:last-child {
+            border-right: none;
+        }
+    }
 }
