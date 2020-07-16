@@ -1,0 +1,14 @@
+// Include bootstrap
+
+// Default bootstrap variable overrides
+$body-bg: #000;
+$body-color: #111;
+
+// Required (bootstrap deps)
+@import "./node_modules/bootstrap/scss/functions";
+@import "./node_modules/bootstrap/scss/variables";
+@import "./node_modules/bootstrap/scss/mixins";
+
+// Optional (bootstrap deps)
+@import "./node_modules/bootstrap/scss/grid";
+
