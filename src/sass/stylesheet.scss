@@ -1,17 +1,18 @@
-$logo-font: "Bitter";
+$logo-font: "Montserrat", sans-serif;
 $logo-color: #f0f0f0;
 
 $bg-color: #09253a;
-$accent-color: #09253a;
+$accent-color: #193b57;
 
 html {
     background-color: $bg-color;
-    font-family: "Ariel";
+    font-family: "Montserrat", sans-serif;
     max-width: 100vw;
 }
 
 body {
     width: 100%;
+    margin: 0 0 55px 0; // Accomodates for nav
 }
 
 header {
@@ -38,8 +39,9 @@ header {
         letter-spacing: 0.05em;
         padding: 3px 25px;
         text-align: center;
-        border-right: 1px solid rgba($logo-color, 0.25);
+        border-right: 1px solid $accent-color;
         text-transform: uppercase;
+        color: #2d83c9;
 
         &:last-child {
             border-right: none;
