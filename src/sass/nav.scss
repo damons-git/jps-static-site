@@ -7,6 +7,7 @@ nav {
     background-color: #ffffff;
     display: flex;
     overflow-x: auto;
+    transition: 0.2s ease-in-out;
 }
 
 .nav-link {
@@ -23,18 +24,20 @@ nav {
     text-decoration: none;
     -webkit-tap-highlight-color: transparent;
     transition: 0.2s ease-in-out;
+    color: rgba(#2a2c2e, 0.8);
 
     &:hover {
-        background-color: rgba(#cfcfcf, 0.5);
+        background-color: rgba(#cfcfcf, 0.35);
 
         i {
-            color: darken(#2a2c2e, 0.2);
+            color: #1eca66;
         }
     }
 
     i {
         color: rgba(#2a2c2e, 0.55);
         font-size: 20px;
+        transition: 0.2s ease-in-out;
     }
 
     span {
@@ -42,10 +45,11 @@ nav {
         font-weight: bold;
         font-size: 13px;
         color: rgba(#2a2c2e, 0.8);
+        transition: 0.2s ease-in-out;
     }
 }
 
-@media only screen and (min-width : 1080px) {
+@media only screen and (min-width : 800px) {
     nav {
         top: 0;
         background: transparent;
@@ -55,11 +59,7 @@ nav {
     }
 
     .nav-link {
-        max-width: 180px;
-
-        &:hover {
-            background-color: rgba(0, 0, 0, 0);
-        }
+        max-width: 120px;
 
         i {
             display: none;
@@ -70,6 +70,20 @@ nav {
             text-shadow: 3px 3px rgba(0, 0, 0, 0.1);
             font-size: 15px;
         }
+
+        &:hover {
+            background-color: rgba(0, 0, 0, 0);
+
+            span {
+                color: #1eca66;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width : 1080px) {
+    .nav-link {
+        max-width: 180px;
     }
 }
 
